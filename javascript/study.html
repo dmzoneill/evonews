@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body onLoad=javascript:work();checkstudy();>
+
+<script language=javascript>
+
+var name = prompt("Please enter your name:", "")
+var schoolwork = parseInt(prompt("Please enter how many hours you go to school a week:", ""))
+var study = parseInt(prompt("Please enter how many hours you study a week:", ""))
+
+var hey = "Hey " + name + ", you work a total of ";
+var time = " hours a week.";
+var small = "\nyour doing sweet fuck all!\n";
+var medium = "\naverage all the way, eh?\n";
+var large = "\nEr you must be fucked up in the head.\n";
+var thanks = "Thanks " + name + " for filling out our survey.";
+var hours = schoolwork+study;
+var study1 = "\nYour doing " + study + " study" + time;
+var school1 = "\nYour doing " + schoolwork + " school work" + time;
+
+
+// check study
+function checkstudy(){
+
+if (study <= 5){
+alert(study1 + "\nYour doing a minimum of study.!\n");
+}
+
+if (study >6 && study <= 10){
+alert(study1 + "\nThats a good amount of study, keep it up.\n");
+}
+
+if (study >11 && study <= 100000){
+alert(study1 + "\nMan, your killing yourself!!!\n");
+}
+}
+
+// main function
+function work(){
+
+if (hours <= 32){
+alert(hey + hours + time + small);
+document.write(thanks);
+}
+
+else {
+if (hours <= 38){
+alert(hey + hours + time + medium);
+document.write(thanks);
+}
+
+else {
+alert(hey + hours + time + large);
+document.write(thanks);
+}
+}
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

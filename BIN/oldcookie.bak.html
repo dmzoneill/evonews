@@ -1,0 +1,22 @@
+<?php
+
+require('conf.php');
+
+$goodcookie = $HTTP_COOKIE_VARS['goodcookie'];
+
+if(!$step){
+    $step = "auth";
+}
+
+if ($step=="auth"){
+$security = "$usermysql:$passmysql";
+$userpass = "$username:$password";
+      if ($userpass==$security){      
+      $cookiecontents = "yes";
+      setcookie("goodcookie", $cookiecontents, time()+7*24*3600, "http://www.xdweb.net/~neiller/", $cookie_domain);
+      $goodcookie = "yes";
+      }
+}
+include('header.php');
+if ($goodcookie){
+?>

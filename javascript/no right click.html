@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+
+
+<head>
+
+<script language="JavaScript">
+
+
+
+
+var fuckoff="Not a chance man, no right clicks arre pintless but hell, fuck it"; 
+
+function click(e) {
+if (document.all) {
+if (event.button == 2) {
+alert(fuckoff);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(fuckoff);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+
+</script>
+
+
+
+</body>
+</html>

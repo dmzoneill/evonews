@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body topmargin=2 bottommargin=2>
+
+<script lanuage=javascript>
+function iframe(){
+parent.frames.right.instead.window.document.location.href='blank.html';
+}
+
+function addtoabove(){
+var imsick = parent.frames.right.document.forgodsakes.messages.value;
+parent.frames.right.instead.window.document.write(imsick);
+}
+
+function makethehtml() {
+var dotheshit;
+var hyhyhy = document.forgodsakes.messages.value;
+dotheshit = window.open("blank.html", "matrix_window");
+dotheshit.document.open("text/html", "replace");
+dotheshit.document.write("<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'><html><head><title>Your html page</title></head><body onBlur='self.focus()'>");
+dotheshit.document.write(hyhyhy);
+dotheshit.document.write("<br><br><form><input type='button' value='close window' onclick='javascript:window.close();'></form>");
+dotheshit.document.write("</body></html>");
+}
+
+
+</script>
+
+<table width=100%><tr><td>
+<center>
+<table border=1 bgcolor="dddddd"><tr><td width=280 valign=left>
+<center>
+<table><tr><tD>
+<form name="forgodsakes" method="post">
+
+
+<input type=button value="Reset the page" onclick='javascript:iframe();'><input type="button" value="full browser window!" onclick="javascript:makethehtml();">&nbsp;&nbsp;&nbsp;<b><font color=red size=3>The page you created</b></td></tr><tr><td>
+<iframe name="instead" width="100%" height="235"></iframe>
+</td></tr><tr><td>
+
+
+<input type="reset" value="Reset Below"><input type="reset" value="add to above" onclick="javascript:addtoabove();">&nbsp;&nbsp;&nbsp;<b><font color=red size=3>HTML source you have created</b></font></td></tr><tr><td>
+
+
+<textarea name="messages" rows=10 cols=60></textarea><br>
+</form></td></tr></table>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+
+
+<script language=javascript>
+<!---
+
+function blahforme() {
+
+var font = document.getinfo.font.value;
+var color = document.getinfo.color.value;
+var size = document.getinfo.size.value;
+var message = document.getinfo.message.value;
+var theshit = "<font size='" + size + "' face='" + font + "' color='" + color + "'>" + message + "</font>";
+
+parent.frames.instead.window.document.write("<font size='" + size + "' face='" + font + "' color='" + color + "'>" + message + "</font>");
+document.getinfo.messages.value= theshit;
+}
+
+//--->
+</script>
+
+
+<table border=0><tr>
+<form name="getinfo" method="post">
+
+<td width=50 valign=left>your message :</td><td width=50 valign=left><input value="hello" type="text" size="20" name="message"></td></tr><tr>
+<td width=50 valign=left>your color :</td><td width=50 valign=left><input value="red" type="text" size="10" name="color"></td></tr><tr>
+<td width=50 valign=left>your font : </td><td width=50 valign=left><input value="times" type="text" size="10" name="font"></td></tr><tr>
+<td width=50 valign=left>your size :</td><td width=50 valign=left><input value="6" type="text" size="10" name="size"></td></tr><tr></table>
+
+
+<table border=0><tr><td>
+
+<iframe name="instead" width="400" height="100"></iframe>
+
+</td></tr></table>
+</td></tr><tr>
+
+<td><textarea name="messages" rows=5 cols=60></textarea></td></tr><tr>
+<td><input type="button" value=submit onclick="javascript:blahforme();">
+<input type="button" value=reset></form></td>
+
+</tr></table>
+
+
+
+
+
+
+</body>
+</html>

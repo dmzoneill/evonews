@@ -1,0 +1,78 @@
+...................................................
+..................installing.......................
+...................................................
+
+initial user / password.. 
+please chage once logged in..
+
+username = webmaster
+password = password
+
+
+
+...................................................
+..................uploading........................
+...................................................
+
+well hopefully youve extracted this right
+you should have the following files
+
+------- news (folder)
+--------------- images (sub dir)
+----------- readme
+----------- news.php
+----------- conf.php // edit this one
+----------- install.php
+----------- header.php
+----------- footer.php
+----------- connect.php
+----------- admin.php
+----------- login.php
+----------- style.css
+
+so when you upload you show called a folder 
+called "news" with everything in there
+
+
+
+
+...................................................
+..............editing conf.php.....................
+...................................................
+
+
+just fill in your database details
+
+
+
+
+
+...................................................
+.................once edited.......................
+...................................................
+
+surf to http://yourdomain/news/install.php
+once installed and youve seen all green ticks 
+(note if you see red ticks something is wrong with your details)
+go to login.php
+
+
+
+
+
+
+...................................................
+..........Get the news on my index page............
+...................................................
+
+use the following code on your homepage assuming its index.php..
+
+include("./news/news.php");
+
+
+
+
+and thats it really :)
+
+
+

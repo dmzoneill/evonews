@@ -1,0 +1,81 @@
+..............................................
+..................installing..................
+..............................................
+
+
+
+
+..................uploading...................
+..............................................
+
+well hopefully youve extracted this right
+you should have the following files
+
+------- news (folder)
+--------------- images (sub dir)
+----------- readme
+----------- news.php
+----------- conf.php // edit this one
+----------- installerp.php
+----------- header.php
+----------- footer.php
+----------- connect.inc
+----------- admin.php
+----------- login.php
+
+so when you upload you show caled a folder called "news" with everything in there
+
+
+
+
+
+
+..............editing conf.php.....................
+...................................................
+
+I think the only one i need to explain is '$cook'
+cook is your cookie domain ie..
+.evobb.com // this would cover everything below '/'
+
+so if you were hosted by f2s.com and have a subdomain
+you would set the following '.yourdomain.f2s.com'
+or if you had a http://www.somplace.com/~yourplace/
+you would set the following '.someplace.com'
+
+If you have any problems mess around with it. 
+And if All else fails contact me 
+neiller@evobb.com
+
+
+
+
+
+.................once edited......................
+..................................................
+
+surf to http://yourdomain/whereever/installer.php
+once installed and youve seen all green ticks 
+(note if you see red ticks something is wrong with your details)
+go to login.php
+
+username = webmaster
+password = password
+
+
+
+
+
+
+..........Get the news on my index page...........
+..................................................
+
+use the following code
+include("./news/news.php");
+
+
+
+
+and thats it really :)
+
+
+

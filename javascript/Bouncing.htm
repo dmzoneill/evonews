@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<BODY>
+
+
+
+<SCRIPT language=javascript1.2 type=text/javascript>
+
+function wobble(n) {
+if (window.moveBy){
+	for (i = 21; i > 0; i--) {
+		for (j = n; j > 0; j--) {
+			window.moveBy(0,i);
+			window.moveBy(i,0);
+			window.moveBy(0,-i);
+			window.moveBy(-i,0);
+	    }
+	}	
+}	
+}
+wobble(50);
+</SCRIPT>
+
+</BODY></HTML>
