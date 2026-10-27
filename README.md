@@ -1,5 +1,9 @@
 # EvoNews
 
+<p align="center">
+  <img src=".github/logo.png" alt="evonews logo" width="128" />
+</p>
+
 A small PHP and MySQL news posting system from the Evolution BB project.
 
 ## What it does
